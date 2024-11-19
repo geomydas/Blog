@@ -16,6 +16,27 @@
     <meta property="twitter:title" content="Meta Tags — Preview, Edit and Generate" />
     <meta property="twitter:description" content="{{ description }}" />
     <meta property="twitter:image" content="https://metatags.io/images/meta-tags.png" />
+    <link
+      rel="preload"
+      href="/fonts/inter-v18-latin-regular.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="/fonts/inter-v18-latin-700.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="/fonts/inter-v18-latin-900.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
     <style>
       {% set css %} {% include "output.css" %} {% endset %}
       {{ css | cssmin | safe }}
@@ -24,9 +45,16 @@
   </head>
   <body class="font-inter font-normal bg-gray-100 dark:bg-gray-900">
     <header class="">
-      <a href="/" class="text-2xl font-bold block w-full dark:bg-gray-800  dark:text-gray-200 text-gray-900 p-8 bg-gray-200" aria-label="jlman - Home">jlman</a>
+      <a
+        class="text-2xl font-bold block w-full dark:bg-gray-800 dark:text-gray-200 text-gray-900 p-8 bg-gray-200"
+        href="/"
+        aria-label="jlman - Home"
+        >jlman</a
+      >
     </header>
-    <main class="max-w-prose prose-gray w-full prose mx-auto px-8 py-16 dark:prose-invert">
+    <main
+      class="max-w-prose prose-gray w-full   prose mx-auto px-8 py-16 dark:prose-invert"
+    >
       <h1 class="">{{ title }}</h1>
       {{ content | safe }}
     </main>
