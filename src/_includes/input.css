@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  @font-face {
+    font-style: normal;
+    font-weight: 400;
+    src: url("/fonts/inter-v18-latin-regular.woff2") format("woff2");
+    font-family: "Inter";
+    font-display: swap;
+  }
+  @font-face {
+    font-style: normal;
+    font-weight: 700;
+    src: url("/fonts/inter-v18-latin-700.woff2") format("woff2");
+    font-family: "Inter";
+    font-display: swap;
+  }
+  @font-face {
+    font-style: normal;
+    font-weight: 900;
+    src: url("/fonts/inter-v18-latin-900.woff2") format("woff2");
+    font-family: "Inter";
+    font-display: swap;
+  }
+}

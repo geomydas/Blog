@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="geomydas" />
+    <meta name="title" content="{{ title }}" />
+    <meta name="description" content="{{ description }}" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://metatags.io/" />
+    <meta property="og:title" content="{{ title }}" />
+    <meta property="og:description" content="{{ description }}" />
+    <meta property="og:image" content="https://metatags.io/images/meta-tags.png" />
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://metatags.io/" />
+    <meta property="twitter:title" content="Meta Tags — Preview, Edit and Generate" />
+    <meta property="twitter:description" content="{{ description }}" />
+    <meta property="twitter:image" content="https://metatags.io/images/meta-tags.png" />
+    <style>
+      {% set css %} {% include "output.css" %} {% endset %}
+      {{ css | cssmin | safe }}
+    </style>
+    <title>{{ title }}</title>
+  </head>
+  <body class="font-inter font-normal bg-gray-100 dark:bg-gray-900">
+    <header class="">
+      <a href="/" class="text-2xl font-bold block w-full dark:bg-gray-800  dark:text-gray-200 text-gray-900 p-8 bg-gray-200" aria-label="jlman - Home">jlman</a>
+    </header>
+    <main class="max-w-prose prose-gray w-full prose mx-auto px-8 py-16 dark:prose-invert">
+      <h1 class="">{{ title }}</h1>
+      {{ content | safe }}
+    </main>
+  </body>
+</html>
