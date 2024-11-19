@@ -554,6 +554,37 @@ video {
   display: none;
 }
 
+.token.keyword,
+  .token.operator {
+  --tw-text-opacity: 1;
+  color: rgb(192 132 252 / var(--tw-text-opacity, 1));
+}
+
+.token.number {
+  --tw-text-opacity: 1;
+  color: rgb(251 146 60 / var(--tw-text-opacity, 1));
+}
+
+.token.function {
+  --tw-text-opacity: 1;
+  color: rgb(96 165 250 / var(--tw-text-opacity, 1));
+}
+
+.token.property {
+  --tw-text-opacity: 1;
+  color: rgb(147 197 253 / var(--tw-text-opacity, 1));
+}
+
+.token.string {
+  --tw-text-opacity: 1;
+  color: rgb(134 239 172 / var(--tw-text-opacity, 1));
+}
+
+.token.selector {
+  --tw-text-opacity: 1;
+  color: rgb(250 204 21 / var(--tw-text-opacity, 1));
+}
+
 @font-face {
   font-style: normal;
 
@@ -1127,8 +1158,8 @@ video {
   --tw-prose-invert-captions: #e5e7eb;
   --tw-prose-invert-kbd: #fff;
   --tw-prose-invert-kbd-shadows: 255 255 255;
-  --tw-prose-invert-code: #e5e7eb;
-  --tw-prose-invert-pre-code: #e5e7eb;
+  --tw-prose-invert-code: #d1d5db;
+  --tw-prose-invert-pre-code: #d1d5db;
   --tw-prose-invert-pre-bg: #1f2937;
   --tw-prose-invert-th-borders: #374151;
   --tw-prose-invert-td-borders: #374151;
@@ -1141,6 +1172,14 @@ video {
 
 .block {
   display: block;
+}
+
+.table {
+  display: table;
+}
+
+.hidden {
+  display: none;
 }
 
 .w-full {
@@ -1159,6 +1198,11 @@ video {
 .bg-gray-200 {
   --tw-bg-opacity: 1;
   background-color: rgb(229 231 235 / var(--tw-bg-opacity, 1));
+}
+
+.bg-gray-800 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(31 41 55 / var(--tw-bg-opacity, 1));
 }
 
 .p-8 {
@@ -1182,6 +1226,11 @@ video {
 .text-2xl {
   font-size: 1.5rem;
   line-height: 2rem;
+}
+
+.text-4xl {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
 }
 
 .font-bold {
@@ -1218,24 +1267,7 @@ video {
     --tw-prose-th-borders: var(--tw-prose-invert-th-borders);
     --tw-prose-td-borders: var(--tw-prose-invert-td-borders);
   }
-}
 
-.prose-h1\:text-center :is(:where(h1):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
-  text-align: center;
-}
-
-.peer:first-child ~ .prose-h1\:peer-first\:bg-red-400 :is(:where(h1):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
-  --tw-bg-opacity: 1;
-  background-color: rgb(248 113 113 / var(--tw-bg-opacity, 1));
-}
-
-.prose-h1\:\~-\[\]\:bg-red-400 :is(:where(h1):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
-  /*
-error - Fluid variants can only be used with fluid utilities
-*/
-}
-
-@media (prefers-color-scheme: dark) {
   .dark\:bg-gray-800 {
     --tw-bg-opacity: 1;
     background-color: rgb(31 41 55 / var(--tw-bg-opacity, 1));
@@ -1246,18 +1278,13 @@ error - Fluid variants can only be used with fluid utilities
     background-color: rgb(17 24 39 / var(--tw-bg-opacity, 1));
   }
 
+  .dark\:text-gray-100 {
+    --tw-text-opacity: 1;
+    color: rgb(243 244 246 / var(--tw-text-opacity, 1));
+  }
+
   .dark\:text-gray-200 {
     --tw-text-opacity: 1;
     color: rgb(229 231 235 / var(--tw-text-opacity, 1));
   }
-}
-
-.prose-h1\:\[\&_\~p\]\:bg-red-400 ~p :is(:where(h1):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
-  --tw-bg-opacity: 1;
-  background-color: rgb(248 113 113 / var(--tw-bg-opacity, 1));
-}
-
-.prose-h1\:\[\&\~p\]\:bg-red-400~p :is(:where(h1):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
-  --tw-bg-opacity: 1;
-  background-color: rgb(248 113 113 / var(--tw-bg-opacity, 1));
 }

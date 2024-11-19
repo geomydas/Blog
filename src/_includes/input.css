@@ -3,6 +3,31 @@
 @tailwind utilities;
 
 @layer base {
+  .token.keyword,
+  .token.operator {
+    @apply text-purple-400;
+  }
+
+  .token.number {
+    @apply text-orange-400;
+  }
+
+  .token.function {
+    @apply text-blue-400;
+  }
+
+  .token.property {
+    @apply text-blue-300;
+  }
+
+  .token.string {
+    @apply text-green-300;
+  }
+
+  .token.selector {
+    @apply text-yellow-400;
+  }
+
   @font-face {
     font-style: normal;
     font-weight: 400;
@@ -10,6 +35,7 @@
     font-family: "Inter";
     font-display: swap;
   }
+
   @font-face {
     font-style: normal;
     font-weight: 700;
@@ -17,6 +43,7 @@
     font-family: "Inter";
     font-display: swap;
   }
+
   @font-face {
     font-style: normal;
     font-weight: 900;

@@ -1,7 +1,7 @@
 import fluid, { extract } from "fluid-tailwind";
 
 module.exports = {
-  content: { files: ["./src/**/*.{html,njk}"], extract },
+  content: { files: ["./{src,dist}/**/*.{html,njk}"], extract },
   theme: {
     screens: { sm: "40rem", md: "48rem", lg: "64rem", xl: "80rem", "2xl": "96rem" },
     extend: {
@@ -39,8 +39,8 @@ module.exports = {
             "--tw-prose-invert-quotes": theme("colors.gray[200]"),
             "--tw-prose-invert-quote-borders": theme("colors.gray[200]"),
             "--tw-prose-invert-captions": theme("colors.gray[200]"),
-            "--tw-prose-invert-code": theme("colors.gray[200]"),
-            "--tw-prose-invert-pre-code": theme("colors.gray[200]"),
+            "--tw-prose-invert-code": theme("colors.gray[300]"),
+            "--tw-prose-invert-pre-code": theme("colors.gray[300]"),
             "--tw-prose-invert-pre-bg": theme("colors.gray[800]"),
             "--tw-prose-invert-th-borders": theme("colors.gray[700]"),
             "--tw-prose-invert-td-borders": theme("colors.gray[700]"),
