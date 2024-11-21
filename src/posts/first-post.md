@@ -1,5 +1,7 @@
 ---
 title: My First Post!
+description: A placeholder post and my first post aswell!
+time: January 1, 2024
 ---
 
 Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse soluta, quaerat alias itaque laborum minima quos quae, autem sapiente adipisci, voluptatum minus provident modi quod ad exercitationem nulla in incidunt.

@@ -37,26 +37,51 @@
       type="font/woff2"
       crossorigin
     />
+    <!-- prettier-ignore-start -->
     <style>
-      {% set css %} {% include "output.css" %} {% endset %}
-      {{ css | cssmin | safe }}
+    {% set css %}{% include "output.css" %}{% endset %}
+    {{ css | cssmin | safe }}
     </style>
+    <!-- prettier-ignore-end -->
     <title>{{ title }}</title>
   </head>
-  <body class="font-inter font-normal bg-gray-100 dark:bg-gray-900">
-    <header class="">
-      <a
-        class="text-2xl font-bold block w-full dark:bg-gray-800 dark:text-gray-200 text-gray-900 p-8 bg-gray-200"
-        href="/"
-        aria-label="jlman - Home"
-        >jlman</a
+  <body class="font-inter font-normal text-gray-900 dark:text-gray-100 bg-gray-100 dark:bg-gray-900">
+    <header class="flex justify-between items-center bg-gray-200 p-8 dark:bg-gray-700">
+      <a class="flex items-center gap-2 group" href="/" aria-current="page"
+        ><svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="2em"
+          height="2em"
+          viewBox="0 0 24 24"
+          aria-hidden="true"
+        >
+          <linearGradient id="gradient" x1="0" y1="0" x2="100%" y2="100%">
+            <stop  class="[stop-color:theme(colors.red.400)]"   offset="0"/>
+            <stop class="[stop-color:theme(colors.orange.400)]" offset="20%" />
+            <stop class="[stop-color:theme(colors.yellow.400)]"  offset="40%" />
+            <stop class="[stop-color:theme(colors.green.400)]"  offset="60%" />
+            <stop class="[stop-color:theme(colors.sky.400)]"  offset="80%" />
+            <stop class="[stop-color:theme(colors.blue.400)]"  offset="100%" />
+          </linearGradient>
+          <path
+            class="group-hover:fill-[url(#gradient)] fill-gray-900 dark:fill-gray-100"
+            fill-rule="evenodd"
+            d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433z"
+            clip-rule="evenodd"
+          ></path>
+        </svg>
+        <span
+          class="font-extrabold text-inherit text-lg  group-hover:bg-rainbow bg-clip-text group-hover:text-transparent"
+          >randev</span
+        ></a
       >
+      <nav>
+        <ul class="flex items-center gap-4 text-lg">
+          <li class="hover:bg-rainbow bg-clip-text hover:text-transparent font-bold">About</li>
+          <li class="hover:bg-rainbow bg-clip-text hover:text-transparent font-bold">Blog</li>
+        </ul>
+      </nav>
     </header>
-    <main
-      class="max-w-prose prose-gray w-full   prose mx-auto px-8 py-16 dark:prose-invert"
-    >
-      <h1 class="">{{ title }}</h1>
-      {{ content | safe }}
-    </main>
+    {{ content | safe }}
   </body>
 </html>

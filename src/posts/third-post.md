@@ -1,5 +1,9 @@
 ---
 title: My Third Post!
+time: December 11, 2024
+description: My second post
+categories: ["html", "accesibility"]
+
 ---
 
 Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse soluta, quaerat alias itaque laborum minima quos quae, autem sapiente adipisci, voluptatum minus provident modi quod ad exercitationem nulla in incidunt.

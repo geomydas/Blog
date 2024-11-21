@@ -6,9 +6,22 @@ module.exports = {
     screens: { sm: "40rem", md: "48rem", lg: "64rem", xl: "80rem", "2xl": "96rem" },
     extend: {
       fontFamily: {
-        inter: ["Inter", "sans-serif"],
+        inter: [
+          "Inter",
+          "ui-sans-serif",
+          "system-ui",
+          "sans-serif",
+          "Apple Color Emoji",
+          "Segoe UI Emoji",
+          "Segoe UI Symbol",
+          "Noto Color Emoji",
+        ],
       },
 
+      backgroundImage: {
+        rainbow:
+          "linear-gradient(to right,theme(colors.red.500),theme(colors.orange.500),theme(colors.yellow.500),theme(colors.green.500),theme(colors.sky.500),theme(colors.blue.500)) ",
+      },
       typography: ({ theme }) => ({
         gray: {
           css: {

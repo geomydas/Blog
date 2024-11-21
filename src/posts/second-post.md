@@ -1,5 +1,7 @@
 ---
 title: My Second Post!
+time: May 15, 2024
+description: Second post!
 ---
 
 Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse soluta, quaerat alias itaque laborum minima quos quae, autem sapiente adipisci, voluptatum minus provident modi quod ad exercitationem nulla in incidunt.
